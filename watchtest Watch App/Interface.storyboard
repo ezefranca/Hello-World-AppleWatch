@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchtest_Watch_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Helo World" textAlignment="center" id="pyg-2e-72Z">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <dateLabel width="1" alignment="center" verticalAlignment="center" alpha="0.0" textAlignment="center" lineHeight="2" format="M/d/yy, h:mm a" id="6gg-de-74T">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                            <date key="previewedDate" timeIntervalSinceReferenceDate="2667600">
+                                <!--2001-01-31 21:00:00 +0000-->
+                            </date>
+                        </dateLabel>
+                        <button width="1" alignment="left" title="Show Time" id="hYq-gj-80i">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <connections>
+                                <action selector="btnClick" destination="AgC-eL-Hgc" id="Jb5-nC-UVn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="mainLabel" destination="pyg-2e-72Z" id="0TD-FN-Pv5"/>
+                        <outlet property="timeLabel" destination="6gg-de-74T" id="pKE-T0-Wfm"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
